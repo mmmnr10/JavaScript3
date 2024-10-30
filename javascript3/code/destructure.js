@@ -15,21 +15,32 @@ console.log(lastName);
 const user = {
   name: "Alice",
   age: 25,
+  eyeColor: "green",
 };
 
+const { name, age , eyeColor } = user
+
+//const name = user.name;
+//const age = user.age;
+
 // Task 3: Print `firstName`, `lastName`, `name`, and `age` using console.log.
-const [firstName0,lastName1,name,age] = arr;
+
 console.log(firstName);
-console(lastName);
-console.log(fullName);
+console.log(lastName);
+console.log(name);
 console.log(age);
+
 
 
 
 // Task 4: Write a function called `getFullName` that takes an object with properties
 // `firstName` and `lastName`, and returns a string that combines them in the format
 // "FirstName LastName". The function has to use destructuring.
-function getFullName({ firstName, lastName }) {
+function getFullName(obj) {
+
+
+  const {firstName,lastName} = obj
+
   return `${firstName} ${lastName}`;
 }
 
@@ -43,9 +54,9 @@ const person = {
 };
 
 
-function getFullName({ firstName, lastName }) {
-    return `${firstName} ${lastName}`; 
-}
+// function getFullName({ firstName, lastName }) {
+//     return `${firstName} ${lastName}`; 
+// }
 
 
 console.log(getFullName(person));

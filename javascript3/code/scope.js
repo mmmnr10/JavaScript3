@@ -7,15 +7,13 @@ const globalVar = "I am global";
 // `localVar` with the value "I am local".
 function testScope() {
     const localVar = "I am local"; 
+    console.log(globalVar); 
+    console.log(localVar);  
 }
 
 // Task 3: Inside `testScope`, print both `globalVar` and `localVar`.
-function testScope() {
-    const localVar = "I am local"; 
-    console.log(globalVar); 
-    console.log(localVar);   
-}
+// se ovan
 
 // Task 4: Outside of the function, try to print `localVar` and observe the result.
 testScope(); 
- console.log(localVar); 
+ //console.log(localVar); 
